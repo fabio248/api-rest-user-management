@@ -1,5 +1,5 @@
 {
-    "name": "user-management-yt",
+    "name": "user-management",
     "version": "1.0.0",
     "type": "module",
     "description": "Aplicación para la gestión de usuarios de una aplicación web",
@@ -11,7 +11,7 @@
         "prepare": "husky install",
         "postinstall": "npm run prepare"
     },
-    "author": "Desarrollo Útil",
+    "author": "Fabio Flores",
     "license": "MIT",
     "dependencies": {
         "@sinclair/typebox": "0.23.5",

@@ -1,13 +1,15 @@
-import connectDB from '#Config/db.js';
 import '#Config/env.js';
 import httpServer from '#Config/http.js';
+import connectDB from '#Config/bd.js';
 
-const bootstrap = async () => {
+const PORT = parseInt(process.env.PORT);
+
+const boostrap = async () => {
     await connectDB(process.env.MONGODB_URL);
 
-    httpServer.listen(process.env.PORT, () => {
-        console.log(`Servidor escuchando en el puerto ${process.env.PORT}`);
+    httpServer.listen(PORT, () => {
+        console.log(`Servidor escuchabdo en el puerto ${PORT}`);
     });
 };
 
-bootstrap();
+boostrap();
